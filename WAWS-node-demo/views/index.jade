@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	div.container
+		div.navbar
+			div.container
+				a.navbar-toggle(data-toggle="collapse", data-target=".nav-collapse")
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href="#") #azureconf
+				div.nav-collapse.collapse
+					ul.nav
+						li.active
+							a(href="/") Home
+						li
+							a(href="/") About
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown") More
+								b.caret
+							ul.dropdown-menu
+								li
+									a(href="/") Contact
+										i.icon-search
+								li
+									a(href="/") More Stuff
+		div.jumbotron
+			h1= title
+block pagescripts
+	script(type='text/javascript')

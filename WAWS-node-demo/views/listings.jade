@@ -1,0 +1,40 @@
+extends layout
+
+block content
+		h1 = title
+		div.fb-search-header
+					div.row
+						div.col-span-4
+							select.col-span.12
+								option -filter by property -
+								option 2
+								option 3
+								option 4
+								option 5
+						div.col-span-4
+							select.col-span-12
+								option - filter by value -
+						div.col-span-4
+							select.col-span-12
+								option - sort by -
+		each item in listings
+			div.facebook-listings
+				div.col-span-12.well.well-small
+					div.row
+						div.col-span-2.fb-thumb
+							a(href="/detail/#{item.Id}/#{pageId}")
+								img(src="#{item.Thumb}")
+						div.col-span-8
+							h4
+								a(href="/detail/#{item.Id}/#{pageId}") #{item.Title}
+							p
+								strong Location: 
+								|#{item.City}, #{item.State}
+							p
+								strong Description: 
+								| #{item.Description.substr(0, 100)} &hellip;
+						div.span2
+							h4
+								span.pull-right #{item.Price}
+							p
+								a.btn.btn-link.pull-right(href="/detail/#{item.Id}/#{pageId}") Click for Details &raquo;

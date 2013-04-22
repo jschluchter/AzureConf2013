@@ -1,0 +1,148 @@
+body {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*----- facebook listings-------*/
+
+.facebook-listings {
+	position: relative;
+	width: 790px;
+}
+
+.well-small {
+	background-color: #f7f7f7;
+	  border: 1px solid #dfe3ee;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+		  margin-bottom: 10px;
+}
+
+.facebook-listings h4 {
+	margin-top: 0px;
+	color: #3b5998;
+	text-shadow: 1px 1px 0 #ffffff;
+  font-weight: bold;
+	}
+	
+.facebook-listings h4 a {
+	color: #3b5998;
+  font-weight: bold;
+}
+
+.facebook-listings h4 a:hover {
+	color: #333333;
+}
+
+.facebook-listings h4 span {
+	color: #000000;
+}
+	
+.fb-search-header {
+	padding: 6px;
+	width: 788px;
+	border: 1px solid #dfe3ee;
+	margin-bottom:10px;
+	-webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+	}
+	
+.facebook-listings form {
+margin: 10px 0 0;
+}
+
+.facebook-listings p {
+	margin: 4px 0;
+	font-size: 13px;
+}
+
+.btn {
+	margin-top: 22px;
+}
+
+
+.btn-link {
+  font-weight: normal;
+  text-align: right;
+  padding: 6px 0 6px 0;
+  color: #428bca;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.details-form .well-small {
+	background: #ffffff;
+}
+
+.details-form input, details-input textarea {
+	margin-bottom: 10px;
+}
+
+.details-form .btn {
+	margin-top: 10px;
+}
+
+.facebook-listings .pad10 {
+	padding: 10px 0;
+}
+
+/*--carousel tweaks ---*/
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 28%;
+  z-index: 5;
+  width: 300px;
+  margin: 0 0 0 -50px;
+  text-align: center;
+  list-style: none;
+}
+
+.phoneText{
+  font-size: 22px;
+  color: #23911D;
+  font-weight: bold;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  margin-left: 0;
+  text-indent: -999px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.error {
+    color: #c80000;
+}
+
+.field-validation-error {
+    color: #c80000;
+    font-size: 14px;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    background: #ffe8e8 !important;
+    border: 1px solid #c80000;
+}
+
+textarea.input-validation-error {
+    background: #ffe8e8 !important;
+    border: 1px solid #c80000;
+}
